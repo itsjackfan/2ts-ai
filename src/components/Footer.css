@@ -1,0 +1,30 @@
+footer {
+    width: 100%; /* Full width for the footer */
+    padding: 30px 20px;
+    background-color: #1A1B41; /* Deep navy blue for the footer background */
+    color: #F4F4F4; /* Off-white text for readability */
+    text-align: center;
+  }
+  
+  footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #E6E6FA; /* Light lavender for headings */
+  }
+  
+  footer p {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+  
+  footer a {
+    color: #D9D7F1; /* Soft lavender for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  footer a:hover {
+    color: #F4F4F4; /* Change to off-white on hover for emphasis */
+  }
+  

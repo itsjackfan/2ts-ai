@@ -1,0 +1,31 @@
+.partners {
+    width: 100%; /* Full width for the section */
+    padding: 50px 20px;
+    background-color: #333; /* Soft light purple for the background */
+    text-align: center;
+  }
+  
+  .partners h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333; /* Dark purple for the heading */
+  }
+  
+  .partners-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Increased spacing for logos */
+    flex-wrap: wrap; /* Allow logos to wrap on smaller screens */
+  }
+  
+  .partners-logos img {
+    width: 150px; /* Logo size */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Add hover effect */
+  }
+  
+  .partners-logos img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  

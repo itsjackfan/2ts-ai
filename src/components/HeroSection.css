@@ -1,0 +1,93 @@
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    color: #f1f1f1; 
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease; /* Smooth fade-in effect */
+  }
+  
+  .hero-container.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .hero-title {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #333;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    animation: slide-in 1s ease-out forwards;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    max-width: 600px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #333;
+    animation: fade-in 2s ease-out 0.5s forwards;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Align buttons vertically */
+    gap: 20px; /* Equal space between buttons */
+    margin-top: 30px;
+    animation: fade-in 2s ease-out 0.8s forwards;
+  }
+  
+  .hero-button {
+    padding: 14px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for buttons */
+  }
+  
+  .hero-button:hover {
+    background-color: rgba(138, 43, 226, 0.8);
+    color: white;
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+  }
+  
+  /* Animations */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

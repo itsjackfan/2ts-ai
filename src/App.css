@@ -1,0 +1,49 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f1f1f1;
+  background-size: cover;
+  min-height: 100vh; /* Ensure the content extends beyond the viewport */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.App {
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  justify-content: start; /* Align content starting from the top */
+  align-items: stretch; /* Stretch sections to fit the width */
+}
+
+.header {
+  position: sticky; /* Sticky header for the top */
+  top: 0; /* Sticks to the top of the viewport */
+  width: 100%; /* Full-width header */
+  background-color: #f1f1f1; /* White background for contrast */
+  z-index: 10; /* Ensure the header stays on top */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh; /* Full height for the hero section */
+  color: #f1f1f1;
+}
+
+.partners {
+  width: 100%; /* Full width for the section */
+  padding: 50px 20px;
+  background-color: #f1f1f1;
+}
+
+footer {
+  width: 100%; /* Full width for the footer */
+  background-color: #111;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 20px;
+}

@@ -1,0 +1,16 @@
+.waves-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url('./waves.png') no-repeat center center;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+.waves-background.fade-in {
+  opacity: 1;
+}

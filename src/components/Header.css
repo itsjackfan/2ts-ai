@@ -1,0 +1,76 @@
+.header {
+  position: sticky; /* Sticks the header to the top when scrolling */
+  top: 0; /* Position it at the very top of the viewport */
+  width: 100%; /* Full width of the viewport */
+  background-color: #8a2be2; /* Clean white background */
+  color: #333; /* Neutral dark gray for text */
+  z-index: 10; /* Ensures the header stays above all other content */
+  display: flex;
+  justify-content: space-between; /* Space between logo, navigation, and button */
+  align-items: center; /* Vertically align the content */
+  padding: 10px 0px; /* Add horizontal and vertical padding */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  width: 150px; /* Adjust the logo size */
+  height: auto; /* Maintain aspect ratio */
+  cursor: pointer;
+}
+
+.header-nav {
+  display: flex;
+  gap: 20px; /* Space between navigation links */
+}
+
+.header-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header-link:hover {
+  color: #8A2BE2; /* Highlight color on hover */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between the "Log In" link and button */
+}
+
+.header-login {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #8A2BE2; /* Brand color for the login link */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header-login:hover {
+  color: #5A189A; /* Darker shade of the brand color */
+}
+
+.header-cta {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #8A2BE2; /* Button background color */
+  border: none;
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.header-cta:hover {
+  background-color: #5A189A; /* Darker shade of the button */
+  transform: scale(1.05); /* Slight zoom effect */
+}
