@@ -1,2 +1,2 @@
-# 2Ts.ai Site
-The 2Ts.ai landing page and site for now.
+# 2Ts.ai
+Leveraging RAG, and grounded simulation to scale up training reinforcement for nonprofits that develop novel trauma therapy techniques.
